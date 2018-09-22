@@ -1,5 +1,4 @@
 <?php
-
 namespace AutoSmelt;
 
 use pocketmine\event\block\BlockBreakEvent;
@@ -19,21 +18,18 @@ use pocketmine\block\Block;
 use pocketmine\plugin\PluginManager;
 use pocketmine\Plugin;
 use pocketmine\Level;
-
 class Main extends PluginBase implements Listener{
 
 public function onEnable(){
 $this->getServer()->getLogger()->info("AutoSmelt Plugin Enabled By JackCasto AKA BlackWebPE");
 $this->getServer()->getPluginManager()->registerEvents($this,$this);
-      $this->ores=array(14,15,16,21,56,73,74,129,153);
+      $this->ores=array(14,15,16,56,73,129,153);
  $this->ingot=array(
  14 => 266,
  15 => 265,
  16 => 263,
- 21 => 351:4,
  56 => 264,
  73 => 331,
- 74 => 331,
  129 => 388,
  153 => 406);
 }
